@@ -58,9 +58,64 @@
             </div>
         </div>
 
-            <!-- ***BILLING ADDRESS*** -->
+            <!-- ***Billing Info*** -->       
         <div class="row">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-4 order-md-2">
+                <h4 class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Your Cart</span>
+                    <span class="badge badge-pill badge-secondary">3</span>
+                </h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="my-0">Product Name</h6>
+                            <small class="text-muted">Breif description</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="my-0">Second Product</h6>
+                            <small class="text-muted">Breif description</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="my-0">Third Product</h6>
+                            <small class="text-muted">Breif description</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item text-success d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="my-0">Promo Code</h6>
+                            <small class="">EXAMPLECODE</small>
+                        </div>
+                        <span class="">-$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="my-0">Total (USD)</h6>
+                        </div>
+                        <strong class="">$20</strong>
+                    </li>
+                </ul>
+
+                <form action="" class="card my-3 py-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code" value="">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ***Checkout From*** -->
+            <div class="col-sm-12 col-md-8 order-md-1">
+                  <!-- ***BILLING ADDRESS*** -->
                 <h4>Billing address</h4>
                 <form action="">
                     <div class="row">
@@ -130,18 +185,80 @@
 
                         <!-- ***SHIPPING ADDRESS (CHECK BOXES)*** -->
                     <hr>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address" name="same-address" value="">
+                        <label for="same-address" class="custom-control-label">Shipping address same as Billing</label>
+                    </div>
 
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="save-info" name="same-info" value="">
+                        <label for="save-info" class="custom-control-label">Save information for later</label>
+                    </div>
+                        
                         <!-- ***PAYMENT*** -->
                     <hr>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="credit" name="paymentOption" value="">
+                        <label for="credit" class="custom-control-label">Credit Card</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="debit" name="paymentOption" value="">
+                        <label for="radio" class="custom-control-label">Debit</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="paypal" name="paymentOption" value="">
+                        <label for="paypal" class="custom-control-label">Paypal</label>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="cc-name">Name on credit card</label>
+                                <input type="text" name="cc-name" id="cc-name" class="form-control">
+                                <small class="text-muted">Full name as displayed on card</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" name="cc-number" id="cc-number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="expiration">Expiration</label>
+                                    <input type="text" name="expiration" id="expiration" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="expiration" id="expiration" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
 
                         <!-- ***SUBMIT FORM BUTTON*** -->
+                        <button class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
                 </form>
             </div>
-            <hr>
-
-            
         </div>
-            <!-- ***Checkout From*** -->
+
+            <!-- FOOTER-->
+            <footer class="row my-5">
+                <div class="col-6">
+                  2017-2018 Company, Inc. <a href="#">Privacy</a> . <a href="#">Terms</a>
+                </div>
+                <div class="col-3 text-right">
+                  <a href="#">Back to the top</a>
+                </div>
+            </footer>
         
     </div>
     <!-- Optional JavaScript; choose one of the two! -->

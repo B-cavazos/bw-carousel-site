@@ -1,0 +1,32 @@
+.image-carousel {
+    max-height: 600px;
+}
+.image-carousel-item {
+  height: 100%;
+}
+
+.product-image{
+  height: 150px;
+  width: 150px;
+  background: grey;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url("../assets/product-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature-image-box{
+  height: 500px;
+  width: 100%;
+}
+
+.feature-image-box-img{
+  height: 500px;
+  width: 500px;
+}
+
+.pricing-card{
+  box-shadow: 0 8px 6px -4px rgba(128,128,128,.1);
+}
